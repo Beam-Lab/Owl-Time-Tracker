@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using BeamLab.OwlTimeTracker.Web.Models
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @if (!SignInManager.IsSignedIn(User))
+        {
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+        }
+        else
+        {
+            <li><a asp-area="" asp-controller="Projects" asp-action="Index">Projects</a></li>
+            <li><a asp-area="" asp-controller="Reports" asp-action="Index">Reports</a></li>
+            <li><a asp-area="" asp-controller="Activities" asp-action="Index">Activities</a></li>
+        }
+    </ul>
+    @await Html.PartialAsync("_LoginPartial")
+</div>

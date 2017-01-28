@@ -8,9 +8,10 @@ using BeamLab.OwlTimeTracker.Web.Data;
 namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170128163359_ProjectsUsers")]
+    partial class ProjectsUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
@@ -97,6 +98,8 @@ namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("AdminUserId");
+
                     b.Property<bool>("Closed");
 
                     b.Property<DateTime>("DueDate");
@@ -108,6 +111,8 @@ namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("AdminUserId");
+
                     b.ToTable("Projects");
                 });
 
@@ -115,8 +120,6 @@ namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("IsAdmin");
 
                     b.Property<int?>("ProjectID");
 
@@ -247,6 +250,13 @@ namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
                     b.HasOne("BeamLab.OwlTimeTracker.Web.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.Project", b =>
+                {
+                    b.HasOne("BeamLab.OwlTimeTracker.Web.Models.ApplicationUser", "AdminUser")
+                        .WithMany()
+                        .HasForeignKey("AdminUserId");
                 });
 
             modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.ProjectUser", b =>

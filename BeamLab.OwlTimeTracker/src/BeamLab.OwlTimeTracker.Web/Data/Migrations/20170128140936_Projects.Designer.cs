@@ -8,37 +8,14 @@ using BeamLab.OwlTimeTracker.Web.Data;
 namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170128140936_Projects")]
+    partial class Projects
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.Activity", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Description");
-
-                    b.Property<DateTime>("End");
-
-                    b.Property<int?>("ProjectID");
-
-                    b.Property<DateTime>("Start");
-
-                    b.Property<string>("UserId");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("ProjectID");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Activities");
-                });
 
             modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.ApplicationUser", b =>
                 {
@@ -97,38 +74,21 @@ namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("AdminUserId");
+
                     b.Property<bool>("Closed");
 
                     b.Property<DateTime>("DueDate");
 
-                    b.Property<string>("Name")
-                        .IsRequired();
+                    b.Property<string>("Name");
 
                     b.Property<DateTime>("StartDate");
 
                     b.HasKey("ID");
 
+                    b.HasIndex("AdminUserId");
+
                     b.ToTable("Projects");
-                });
-
-            modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.ProjectUser", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("IsAdmin");
-
-                    b.Property<int?>("ProjectID");
-
-                    b.Property<string>("UserId");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("ProjectID");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ProjectsUsers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -238,26 +198,11 @@ namespace BeamLab.OwlTimeTracker.Web.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.Activity", b =>
+            modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.Project", b =>
                 {
-                    b.HasOne("BeamLab.OwlTimeTracker.Web.Models.Project", "Project")
+                    b.HasOne("BeamLab.OwlTimeTracker.Web.Models.ApplicationUser", "AdminUser")
                         .WithMany()
-                        .HasForeignKey("ProjectID");
-
-                    b.HasOne("BeamLab.OwlTimeTracker.Web.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("BeamLab.OwlTimeTracker.Web.Models.ProjectUser", b =>
-                {
-                    b.HasOne("BeamLab.OwlTimeTracker.Web.Models.Project", "Project")
-                        .WithMany()
-                        .HasForeignKey("ProjectID");
-
-                    b.HasOne("BeamLab.OwlTimeTracker.Web.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("AdminUserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>
