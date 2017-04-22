@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UserSecretsId>aspnet-BeamLab.ProjectsTracker.Web-eb00443e-4c30-4ed1-add5-912fd3cf9985</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\ApplicationUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\animate.css" />
+    <Content Include="wwwroot\css\bootstrap.min.css" />
+    <Content Include="wwwroot\css\font-awesome.min.css" />
+    <Content Include="wwwroot\css\normalize.css" />
+    <Content Include="wwwroot\css\owl.carousel.min.css" />
+    <Content Include="wwwroot\css\owl.transitions.css" />
+    <Content Include="wwwroot\css\responsive.css" />
+    <Content Include="wwwroot\css\style.css" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="wwwroot\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular-5.html" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="wwwroot\img\about\1.png" />
+    <Content Include="wwwroot\img\about\2.png" />
+    <Content Include="wwwroot\img\about\3.png" />
+    <Content Include="wwwroot\img\about\4.png" />
+    <Content Include="wwwroot\img\bg\client.png" />
+    <Content Include="wwwroot\img\bg\slider-bg.jpg" />
+    <Content Include="wwwroot\img\clients\1.png" />
+    <Content Include="wwwroot\img\clients\2.png" />
+    <Content Include="wwwroot\img\clients\3.png" />
+    <Content Include="wwwroot\img\clients\4.png" />
+    <Content Include="wwwroot\img\favicon.png" />
+    <Content Include="wwwroot\img\feature\1.png" />
+    <Content Include="wwwroot\img\feature\2.png" />
+    <Content Include="wwwroot\img\feature\3.png" />
+    <Content Include="wwwroot\img\footer-logo.png" />
+    <Content Include="wwwroot\img\grabbing.png" />
+    <Content Include="wwwroot\img\logo.png" />
+    <Content Include="wwwroot\img\LogoType.png" />
+    <Content Include="wwwroot\img\news\1.jpg" />
+    <Content Include="wwwroot\img\news\2.jpg" />
+    <Content Include="wwwroot\img\preloader.gif" />
+    <Content Include="wwwroot\img\testimonial\1.png" />
+    <Content Include="wwwroot\img\testimonial\2.png" />
+    <Content Include="wwwroot\img\testimonial\3.png" />
+    <Content Include="wwwroot\img\testimonial\4.png" />
+    <Content Include="wwwroot\img\works\1.png" />
+    <Content Include="wwwroot\img\works\2.png" />
+    <Content Include="wwwroot\img\works\3.png" />
+    <Content Include="wwwroot\img\works\4.png" />
+    <Content Include="wwwroot\img\works\5.png" />
+    <Content Include="wwwroot\img\works\6.png" />
+    <Content Include="wwwroot\js\jquery.ajaxchimp.min.js" />
+    <Content Include="wwwroot\js\jquery.inview.min.js" />
+    <Content Include="wwwroot\js\jquery.min.js" />
+    <Content Include="wwwroot\js\jquery.waypoints.min.js" />
+    <Content Include="wwwroot\js\main_script.js" />
+    <Content Include="wwwroot\js\main_script.min.js" />
+    <Content Include="wwwroot\js\owl.carousel.min.js" />
+    <Content Include="wwwroot\js\wow.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCaching" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="SendGrid" Version="9.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeamLab.ProjectsTracker.Models\BeamLab.ProjectsTracker.Models.csproj" />
+  </ItemGroup>
+
+</Project>

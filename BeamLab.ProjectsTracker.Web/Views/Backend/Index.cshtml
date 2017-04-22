@@ -1,0 +1,83 @@
+@model IEnumerable<BeamLab.ProjectsTracker.Models.Project>
+
+@{
+    Layout = "_BackendLayout";
+    ViewData["Title"] = "Index";
+}
+
+<h2>Projects</h2>
+
+<p>
+    <a asp-action="EditProject">Create New Project</a>
+</p>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+    @foreach (var item in Model)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="Panel_@item.ID">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_@item.ID" aria-expanded="true" aria-controls="collapseOne">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="Panel_@item.ID">
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            @if (item.Description != null)
+                            {
+                                <span>@item.Description</span>
+                            }
+                            else
+                            {
+                                <span>No Description.</span>
+                            }
+
+                            <br />
+                            <br />
+
+                            <b>Budget Hours:</b> @Html.DisplayFor(modelItem => item.BudgetHours) | <b>Due Date:</b> @item.DueDate.ToString("MM/dd/yyyy")
+
+                            <br />
+                        </div>
+
+                        <div class="col-md-6">
+                            <form asp-action="AddHours" class="pull-right">
+                                <div class="form-horizontal">
+                                    <input type="hidden" id="Project" name="Project" value="@item.ID" />
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Hours:</label>
+                                        <div class="col-md-10">
+                                            <input type="number" id="Hours" name="Hours" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Add" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a asp-action="EditProject" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-action="ProjectDetails" asp-route-id="@item.ID">Details</a> |
+                            <a asp-action="DeleteProject" asp-route-id="@item.ID">Delete</a>
+                        </div>
+                        <div class="col-md-6 ">
+                            <a class="pull-right" asp-action="InviteUser" asp-route-id="@item.ID">Invite User</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

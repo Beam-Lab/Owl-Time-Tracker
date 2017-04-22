@@ -1,0 +1,1035 @@
+/* INDEX
+----------------------------------------------------------------------------------------
+
+01. General css
+
+02. Navigation area css
+
+03. Slider area css
+
+04. About area css
+
+05. Feature-area css
+
+06. Why Choose area css
+
+07. Fun facts Css
+
+08. Pricing area css
+
+09. Testimonial area css
+
+10. News area css
+
+11. plan section css
+
+12. Contact area css
+
+13. Subscribe area css
+
+14. Footer area css
+
+15. copyright-area css
+
+-------------------------------------------------------------------------------------- */
+
+
+/* Google Fonts lato and open sans */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700,900|Open+Sans');
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    color: #333;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Open Sans','Myriad Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn, input[type='submit'] {
+    display: inline-block;
+    background: transparent;
+    padding: 10px 25px;
+    font-weight: 300;
+    border-radius: 0px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    color: #fff;
+    background: #df4b3b;
+    border: none;
+    font-family: 'Lato';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn.btn-trnsp {
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn-big {
+    border: 2px solid #000;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+.btn.btn-trnsp:hover {
+    border-color: #82b541;
+    background: #82b541;
+    color: #fff;
+}
+
+.section-big {
+    padding: 45px 0px;
+}
+
+.section-small {
+    padding: 50px 0px;
+}
+
+.section-title {
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 70px;
+    margin-top: 0px;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    font-weight: 900;
+	color: #df4b3b;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.inner-title{
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.inner-title h2 {
+    font-size: 24px;
+    font-weight: 900;
+	color: #df4b3b;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.section-title h1 {
+    font-size: 40px;
+    font-weight: 900;
+	color: #333;
+    margin-bottom: 25px;
+    margin-top: 0;
+    
+}
+
+
+
+/* preloader css */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url(../img/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+.header-space{height: 96px;}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+
+
+.menu-area.navbar-fixed-top {
+    background: #fff;
+    top: 0px;
+    height: 95px;
+}
+
+.menu-area.navbar-fixed-top.sticky-menu {
+    top: 0px;
+    height: 75px;
+}
+
+.sticky-menu {
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.mainmenu {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-menu .mainmenu {
+    padding-top: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+	margin-top: 25px; 
+}
+
+.sticky-menu .navbar {
+    margin-top: 14px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand:hover {
+    color: #82b541;
+}
+
+.mainmenu ul.navbar-nav {
+   
+}
+
+.navbar-nav  li {
+    float: none;
+    display: inline-block;
+	padding: 10px 20px;
+}
+
+.navbar-nav li a {
+    color: #333;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+    background: none;
+}
+
+.navbar-collapse .navbar-nav li.active a {
+    color: #e44032;
+	border-bottom: 1px solid #e44032;
+}
+
+.navbar-collapse li .chat-button {
+    border: none;
+    padding: 10px 45px;
+    background: #e44032;
+	color: #fff;
+}
+
+.navbar-collapse li .chat-button:hover {
+	color: #fff;
+    background: #333;
+}
+
+
+
+/* Mobile Nav css */
+.navbar-toggle .icon-bar {
+	background: #e44032;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Slider area css
+* -------------------------------------------------------------------------------------- */
+
+.slider-area {
+    background-image: url(../img/bg/slider-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 600px;
+    height: 100%;
+    position: relative;
+}
+
+.slider-area:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(40, 143, 235, 0.90);
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+	max-width: 780px;
+	margin: auto;
+}
+
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 25px;
+    color: #333;
+	margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.intro-text h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.search-box-area {
+    max-width: 520px;
+    background: #88C8F1;
+    padding: 10px;
+	margin:	auto;
+}
+
+.search-box-area .search-box .domain {
+    display: inline-block;
+    height: 50px;
+    padding: 0px 20px;
+	width: 80%;
+}
+
+.search-box-area .search-box input[type='text'] {
+	font-size: 23px;
+	border: none;
+}
+
+.search-box-area .search-box input[type='submit'] {
+	height:	50px;
+	background:	#E44032;
+	font-size:	24px;
+	margin-left: -5px;
+}
+
+.search-box-area .search-box input[type="text"]::-webkit-input-placeholder{
+	color: #333 !important;
+}
+
+.search-box-area .search-box input[type='text']:focus {
+    outline: none;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               04. About area css
+* ---------------------------------------------------------------------------------------*/
+
+.about-area {
+    background: #fff;
+}
+
+@media (min-width: 768px) {
+    .about-area .single-about {
+        padding-bottom: 40px;
+    }
+}
+
+.about-text h3 {
+    margin-top: 0px;
+}
+
+.about-text ul {
+    margin-top: 10px;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.about-text ul li {
+    line-height: 30px;
+    position: relative;
+
+}
+
+.about-text ul li:before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    left: -30px;
+    top: 50%;
+    margin-top: -5px;
+    border: 2px solid #333;
+    border-radius: 50px;
+}
+
+.about-text .btn {
+    margin-top: 20px;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   05.Feature-area css
+* --------------------------------------------------------------------------------------- */
+
+.feature-area{
+	padding-bottom: 0px;
+
+}
+
+.home-services .service-box {
+   text-align:center;
+   margin-bottom: 50px;
+}
+
+
+.home-services .service-box h3 {
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.home-services .service-box img{
+    margin-bottom: 15px;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   06. Why Choose area css
+* --------------------------------------------------------------------------------------- */
+
+.promo-area{
+	padding-bottom: 0px;
+}
+
+.about-area .container {
+    max-width: 1000px;
+}
+
+.choose-box {
+    margin-bottom: 30px;
+}
+
+.why-choose-area img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.choose-box i.fa {
+    position: relative;
+    font-size: 30px;
+    width: 60px;
+}
+
+.choose-box.left {
+    text-align: right;
+	margin-right: 20px;
+}
+
+.choose-box.left i.fa {
+    float: right;
+}
+
+.choose-box.right {
+  text-align: left;
+	margin-left: 20px;
+}
+
+.choose-box.right i.fa {
+    float: left;
+}
+
+.choose-content {
+    overflow: hidden;
+}
+.choose-content h3 {
+    margin-top: 0px;
+    position: relative;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   07. Fun facts area css
+* --------------------------------------------------------------------------------------- */
+
+.fun-facts-area{
+    background-image: url(../img/bg/client.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fun-facts-area:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(00, 00, 00, 0.75);
+}
+
+.fun-fact h3 {
+    font-size: 36px;
+    font-weight: 900;
+	color: #fff;
+}
+.fun-fact p {
+	color: #fff;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   08. Pricing area css
+* --------------------------------------------------------------------------------------- */
+
+.pricing-area {
+    padding-bottom: 0px;
+}
+
+.price-item {
+    margin: 0;
+    background-color: #ddd;
+    text-align: center;
+    position: relative;
+}
+
+.host-plan p {
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+p.column-first {
+    background: #ddd;
+}
+
+p.column-second {
+    background: #fff;
+}
+
+.price-item p.level {
+    font-size: 18px;
+    line-height: 65px;
+    margin: 0;
+    background: #2B4050;
+	color: #fff;
+}
+
+.price-item p.featured {
+    font-size: 18px;
+    line-height: 65px;
+    margin: 0;
+    background: #df4b3b;
+	color: #fff;
+}
+
+.price-item a.featured-button {
+    background: #df4b3b !important;
+}
+
+.price-item a.featured-button:hover {
+    background: #333 !important;
+}
+
+.price-item a.btn {
+    background: #2B4050;
+    width: 100%;
+    color: #fff;
+	padding: 20px 0;
+}
+
+.price-item a.btn:hover {
+    background: #df4b3b;
+}
+
+@media  (min-width: 768px) {
+
+    div.col-sm-7.five-three {
+		width: 60% !important;
+    }
+
+    div.col-sm-5.five-two {
+		width: 40% !important;
+    }
+	
+	.space{padding:1px!important}
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                9. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+
+
+.single-testimonial {
+	text-align: center;
+	padding: 0px 25px;
+}
+
+.single-testimonial img {
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+}
+
+.single-testimonial i.fa {
+    font-size: 60px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #82b541;
+}
+
+.single-testimonial p {
+    margin: 0;
+	font-size: 15px;
+	
+}
+
+.single-testimonial h4 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #df4b3b;
+}
+
+.single-testimonial .desg {
+    margin-bottom: 20px;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 40px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    border: 1px solid #df4b3b;
+    float: left;
+}
+
+.owl-pagination {
+    width: 110px;
+    margin: auto;
+}
+
+.owl-page.active span {
+    background: #df4b3b;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    font-size: 25px;
+    background: none;
+    padding: 5px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   10. News area css
+* --------------------------------------------------------------------------------------- */
+.news-area {}
+.single-news {}
+
+.news-image {
+    float: left;
+	margin-right: 25px;
+}
+
+.blog-content {
+    display: block;
+    overflow: hidden;
+}
+
+.blog-content h2{
+	margin-top:0px;
+	font-size: 20px;
+}
+
+.news-image img {
+    width: 100%;
+}
+
+.news-content .subtitle {
+    text-transform: inherit;
+    line-height: 28px;
+}
+
+.news-content .subtitle i.fa {
+    color: #82b541;
+}
+
+.news-content .btn {
+    margin-top: 10px;
+}
+
+.news-meta {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 15px;
+	color: #df4b3b;
+}
+
+.news-meta span {
+    float: left;
+    margin-right: 15px;
+}
+
+.news-meta span i.fa {
+    margin-right: 4px;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   11. plan section css
+* --------------------------------------------------------------------------------------- */
+
+.plan-area{
+	background: #2B4050;
+}
+
+.plan-content {
+    position: relative;
+    max-width: 910px;
+    margin: auto;
+}
+
+.plan-content h1 {
+    color: #fff;
+}
+.plan-select {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.plan-select .btn {
+    background: #fff;
+    color: #E44032;
+}
+.plan-select .btn:hover {
+    background: #E44032;
+    color: #fff;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   12. Contact area css
+* --------------------------------------------------------------------------------------- */
+.contact-form h2 {
+    font-size: 20px;
+    text-align: center;
+	text-transform: uppercase;
+    line-height: 32px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 5px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-group {
+    position: relative;
+    border: 1px solid #bbb;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group:before {
+    position: absolute;
+    height: 45px;
+    font-family: FontAwesome;
+    top: 0;
+    left: 0;
+    width: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: #82b541;
+    font-size: 18px;
+}
+
+.contact-form #message {
+    padding-top: 10px;
+    height: 150px;
+}
+
+#submitButton {}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #50B948;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    background: #fff none repeat scroll 0 0;
+    color: #ff0000;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                                13. Subscribe area css
+* --------------------------------------------------------------------------------------- */
+.subscribe-area {
+    background-color: #f1f1f1;
+}
+.subscribe-box {}
+
+.subscribe-box h2 {
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+.subscribe-box h2 span {
+    color: #82b541;
+}
+
+.newsletter-form {
+    margin: auto;
+}
+
+.newsletter-form input{
+    display: inline-block;
+    height: 50px;
+    width: 80%;
+    padding: 5px 10px;
+    background: #fff;
+    float: left;
+}
+
+.newsletter-form .mc-submit {
+    height: 50px;
+    width: 20%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #df4b3b;
+    border: none;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.newsletter-form .mc-submit:hover {
+    color: #000;
+}
+
+.subscribe-area .error {
+    text-align: left;
+}
+
+.mailchimp-alerts {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.mailchimp-success{
+    color: green;
+}
+
+.mailchimp-error{
+    color: red;
+}
+
+.subcriber-box {
+	margin-top: 20px;
+}
+
+.subcriber-box input[type="email"]::-webkit-input-placeholder {
+	color: #555 !important;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   14. Footer area css
+* --------------------------------------------------------------------------------------- */
+
+.footer-area {
+	background-color: #288feb;
+	padding: 80px 0px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.footer-area h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-family: Open sans-serif;
+}
+
+.logo img {
+	margin-bottom: 25px;
+}
+
+.footer-info i.fa {
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                15. copyright-area
+* --------------------------------------------------------------------------------------- */
+
+.copyright-area {
+	padding: 30px 0px;
+	background-color: #2d3e50;
+	color: #fff;
+	text-align: center;
+}
+
+.social {
+	margin-top: 15px;
+}
+
+.social-links li {
+	list-style: none;
+	display: inline-block;
+}
+
+.social-links li a i {
+	color: #fff;
+	font-size: 24px;
+	margin: 0 10px;
+}
+
+.social-links li a:hover i {
+	color: #df4b3b;
+}
+.footer-text p {
+	margin-top: 10px;
+}

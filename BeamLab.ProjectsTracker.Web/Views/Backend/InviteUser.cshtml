@@ -1,0 +1,27 @@
+@model BeamLab.ProjectsTracker.Models.InviteUser
+
+@{
+    ViewData["Title"] = "InviteUser";
+    Layout = "~/Views/Shared/_BackendLayout.cshtml";
+
+}
+
+<h2>Invite User</h2>
+
+<form asp-action="InviteUser">
+    <div class="form-horizontal">
+        <input type="hidden" asp-for="Project" />
+        <hr />
+        <div class="form-group">
+            <label asp-for="Email" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input type="email" asp-for="Email" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Invite User" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>

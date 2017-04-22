@@ -1,0 +1,45 @@
+{
+  "name": "blockadblock",
+  "version": "3.2.0",
+  "description": "Detects ad blockers (AdBlock, ...)",
+  "authors": [
+    {
+      "name": "Valentin Allaire",
+      "email": "valentin.allaire@sitexw.fr",
+      "homepage": "http://sitexw.fr/"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "adblock",
+    "advertising",
+    "ad",
+    "block",
+    "lock",
+    "detection",
+    "detecting"
+  ],
+  "main": "blockadblock.js",
+  "ignore": [
+    "package.json",
+    "README.md",
+    "test.html"
+  ],
+  "homepage": "https://github.com/sitexw/BlockAdBlock",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sitexw/BlockAdBlock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sitexw/BlockAdBlock/issues"
+  },
+  "_release": "3.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.2.0",
+    "commit": "c01bcfcc5261c558b2dd05604f7a74305bf7f07f"
+  },
+  "_source": "https://github.com/sitexw/BlockAdBlock.git",
+  "_target": "3.2.0",
+  "_originalSource": "blockadblock"
+}

@@ -1,0 +1,315 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="clearfix header-space"></div>
+
+<!-- Slider area starts -->
+<section id="slider" class="slider-area">
+    <div class="table">
+        <div class="table-cell">
+            <div class="intro-text">
+                <img src="~/img/Logo.png" data-wow-delay="0.2s" alt="@Application.Name" class="img-responsive center-block wow fadeInDown" style="max-height:150px" />
+                <h1 class="wow fadeInLeft" data-wow-delay="0.4s">Free and Professional <br /> Time Tracker</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container homebanner">
+    @await Component.InvokeAsync("GoogleAD")
+</div>
+
+<!-- About area starts -->
+<section id="promo" class="promo-area section-big">
+    <div class="container">
+        <div class="row">
+            <div class="home-services">
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/feature/1.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Registrati in pochi passi e inizia a utilizzare subito Owl Time Tracker. Facile e veloce e soprattutto gratuito.</p>
+                    </div>
+                </div>
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/feature/2.png" alt="" />
+                        <h3 class="subtitle">Better Backup</h3>
+                        <p>I tuoi dati sono al sicuro e in ogni momento puoi scaricare tutti i dati senza nessuna limitazione nel tempo.</p>
+                    </div>
+                </div>
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="img/feature/3.png" alt="" />
+                        <h3 class="subtitle">Relible Speed</h3>
+                        <p>Grazia alla potenza del cloud, Owl Time Tracker è accessibile velocemente da ogni parte del mondo e da ogni tipo di device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-area section-big">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <h1>World class Hosting</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row single-about">
+            <div class="col-sm-2">
+                <img class="wow fadeInLeft" data-wow-delay="0.2s" src="img/about/1.png" alt="">
+            </div>
+            <div class="col-sm-10">
+                <div class="choose-box right">
+                    <div class="choose-content">
+                        <h3 class="subtitle">Shared Hosting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente provident dolorem et atque distinctio deleniti mollitia nostrum velit iste, aperiam eaque! Soluta! Impedit harum quis maxime ducimus laborum nesciunt soluta tempore aperiam ex quasi minus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix space"></div>
+        <div class="row single-about">
+            <div class="col-sm-2 col-sm-push-10">
+                <img class="wow fadeInRight" data-wow-delay="0.4s" src="img/about/2.png" alt="">
+            </div>
+            <div class="col-sm-10 col-sm-pull-2">
+                <div class="choose-box left">
+                    <div class="choose-content">
+                        <h3 class="subtitle">Virtual Private Server (VPS) Hosting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente provident dolorem et atque distinctio deleniti mollitia nostrum velit iste, aperiam eaque! Soluta! Impedit harum quis maxime ducimus laborum nesciunt soluta tempore aperiam ex quasi minus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix space"></div>
+        <div class="row single-about">
+            <div class="col-sm-2 ">
+                <img class="wow fadeInLeft" data-wow-delay="0.6s" src="img/about/3.png" alt="">
+            </div>
+            <div class="col-sm-10">
+                <div class="choose-box right">
+                    <div class="choose-content">
+                        <h3 class="subtitle">Dedicated Server Hosting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente provident dolorem et atque distinctio deleniti mollitia nostrum velit iste, aperiam eaque! Soluta! Impedit harum quis maxime ducimus laborum nesciunt soluta tempore aperiam ex quasi minus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix space"></div>
+
+        <div class="row single-about">
+            <div class="col-sm-2 col-sm-push-10">
+                <img class="wow fadeInRight" data-wow-delay="0.8s" src="img/about/4.png" alt="">
+            </div>
+            <div class="col-sm-10 col-sm-pull-2">
+                <div class="choose-box left">
+                    <div class="choose-content">
+                        <h3 class="subtitle">Virtual Private Server (VPS) Hosting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente provident dolorem et atque distinctio deleniti mollitia nostrum velit iste, aperiam eaque! Soluta! Impedit harum quis maxime ducimus laborum nesciunt soluta tempore aperiam ex quasi minus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About area ends -->
+<!-- Work area starts -->
+<section id="feature" class="feature-area section-big">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-title">
+                    <h2>Features</h2>
+                    <h1>You will get lot of features</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="home-services">
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/works/1.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente.</p>
+                    </div>
+                </div>
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/works/2.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente.</p>
+                    </div>
+                </div>
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/works/3.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente.</p>
+                    </div>
+                </div>
+
+
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="img/works/4.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente.</p>
+                    </div>
+                </div>
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="1.0s">
+                        <img src="img/works/5.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente.</p>
+                    </div>
+                </div>
+                <!-- Service box -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-box wow fadeInUp" data-wow-delay="1.2s">
+                        <img src="img/works/6.png" alt="" />
+                        <h3 class="subtitle">Instant Setup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio pariatur nobis blanditiis, non labore quidem sapiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Work area ends -->
+<!-- Contact area starts -->
+<section id="contact" class="contact-area section-big">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h2>Contacts</h2>
+                    <h1>Questions or suggestions?</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Contact form starts -->
+                <div class="contact-form">
+                    <h2>
+                        If you got any questions <br />
+                        please do not hesitate to send us a message.
+                    </h2>
+                    <!-- Submition status -->
+                    <div id="form-messages"></div>
+                    <form id="ajax-contact" method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group in_name">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group in_email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group in_email">
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group in_message">
+                                    <textarea name="message" class="form-control" id="message" placeholder="Message" required="required"></textarea>
+                                </div>
+                                <div class="actions">
+                                    <input type="submit" value="Send Message" name="submit" id="submitButton" class="btn" title="Submit Your Message!">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Contact form ends-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact area ends -->
+<!-- Footer area starts -->
+<footer class="footer-area section-big">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="logo padding">
+                    <a href="#"><img src="~/img/LogoType.png" alt="" /></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-info padding">
+                    <h3>CONTACT US</h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> 2130 Fulton Street San Diego, Australia</p>
+                    <p><i class="fa fa-paper-plane" aria-hidden="true"></i> Mail@hostland.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +88 3 8376 6284</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="subcriber-info">
+                    <h3>SUBSCRIBE</h3>
+                    <p>Get healthy news, tip and solutions to your problems from our experts.</p>
+                    <div class="subcriber-box">
+                        <form id="mc-form" class="mc-form">
+                            <div class="newsletter-form">
+                                <input type="email" autocomplete="off" id="mc-email" placeholder="Email address" class="form-control">
+                                <button class="mc-submit" type="submit"><i class="fa fa-paper-plane"></i></button>
+                                <div class="clearfix"></div>
+                                <!-- mailchimp-alerts Start -->
+                                <div class="mailchimp-alerts">
+                                    <div class="mailchimp-submitting"></div>
+                                    <!-- mailchimp-submitting end -->
+                                    <div class="mailchimp-success"></div>
+                                    <!-- mailchimp-success end -->
+                                    <div class="mailchimp-error"></div>
+                                    <!-- mailchimp-error end -->
+                                </div>
+                                <!-- mailchimp-alerts end -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer area ends -->
+
+<div class="container homebanner">
+    @await Component.InvokeAsync("GoogleAD")
+</div>
+
+<!-- copyright area start -->
+<div class="copyright-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-text">
+                    <p> Copyright &copy; @DateTime.Now.Year BeamLab. All Rights Reserved. Designed by BeamLab</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- copyright area end -->
